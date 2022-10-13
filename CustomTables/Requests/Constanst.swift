@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+class Constants {
+    static let ChartsGet = "https://s3.amazonaws.com/dev.structure.files/examen/ios/test.json"
+}

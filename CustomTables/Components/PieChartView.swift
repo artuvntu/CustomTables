@@ -1,9 +1,9 @@
 //
-//  PieChart.swift
+//  PieChartView.swift
 //  CustomTables
 //
-//  Created by Arturo Ventura on 13/10/22.
-//
+//  Gets from
+// https://stackoverflow.com/questions/35752762/making-a-pie-chart-using-core-graphics
 
 import UIKit
 
@@ -71,5 +71,9 @@ class PieChartView: UIView {
             // update starting angle of the next segment to the ending angle of this segment
             startAngle = endAngle
         }
+        ctx?.setFillColor(UIColor.white.cgColor)
+        ctx?.move(to: .zero)
+        ctx?.fillEllipse(in: CGRect(x: 15, y: 15, width: radius*2-30, height: radius*2-30))
+        
     }
 }

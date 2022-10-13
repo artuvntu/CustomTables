@@ -6,3 +6,10 @@
 //
 
 import Foundation
+import FacilCustomApp
+
+class AlphabeticFilter: CustomTextFieldFilter {
+    func filter(finalValue: String) -> Bool {
+        finalValue.range(of: "[^a-zA-ZáéíóúÁÉÍÓÚñÑ ]", options: .regularExpression) == nil
+    }
+}

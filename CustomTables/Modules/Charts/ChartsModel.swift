@@ -8,23 +8,23 @@
 import Foundation
 
 // MARK: - Survey
-class Survey: Codable {
-    var reporte: [Reporte]?
-    var empresas: [Empresa]?
+class SurveyModel: Codable {
+    var reporte: [ReporteModel]?
+    var empresas: [EmpresaModel]?
 
     enum CodingKeys: String, CodingKey {
         case reporte = "reporte"
         case empresas = "empresas"
     }
 
-    init(reporte: [Reporte]?, empresas: [Empresa]?) {
+    init(reporte: [ReporteModel]?, empresas: [EmpresaModel]?) {
         self.reporte = reporte
         self.empresas = empresas
     }
 }
 
 // MARK: - Empresa
-class Empresa: Codable {
+class EmpresaModel: Codable {
     var nombre: String?
     var porcentaje: Int?
 
@@ -40,7 +40,7 @@ class Empresa: Codable {
 }
 
 // MARK: - Reporte
-class Reporte: Codable {
+class ReporteModel: Codable {
     var valor: String?
     var cantidad: Int?
 
