@@ -6,6 +6,6 @@ target 'CustomTables' do
   use_frameworks!
 
   # Pods for CustomTables
-  pod 'FacilCustomApp', :path => '/Users/arturoventura/outCloud/tests/FacilCustomApp/FacilCustomApp'
+  pod 'FacilCustomApp', '0.0.4'
 
 end
